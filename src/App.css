@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+body {
+  background-color: #63c1c9;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-main-container {
+  display: flex;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
+  width: 400px;
+  margin-top: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App-top-picture, .App-bottom-picture {
+  width: 250px;
+}
+
+.App-top-picture {
+  align-self: flex-start;
+}
+
+.App-header {
+  font-size: 30px;  
+  font-weight: 300;
+}
+
+.InputArea-main-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.InputArea-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.InputArea-input {
+  width: 260px;
+  height: 28px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.InputArea-add-btn, .InputArea-delete-btn {
+  font-size: 14px;
+  width: 200px;
+  padding: 8px;
+  margin-top: 10px;
+  border: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.InputArea-add-btn {
+  background-color: #6ead14;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.InputArea-delete-btn {
+  background-color: #d40000;
+}
+
+.InputArea-ul {
+  list-style: none;
+  width: 240px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.InputArea-li-span {
+  margin-right: 15px;
+}
+
+.InputArea-checkmark {
+  width: 25px;
+}
+
+.crossed {
+  background-color: #eae9e9df;
+  text-decoration: line-through;
+  text-decoration-color: #d40000;
 }
